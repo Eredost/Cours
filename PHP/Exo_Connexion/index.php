@@ -1,12 +1,12 @@
 <?php 
 session_start();
 
+$message = "";
+
  if(!empty($_POST["pseudo"]) && !empty($_POST["password"])) {
 
     require 'classes/DbData.php';
    $data = new DbData();
-
-   $message = "";
 
    if($data->checkInputs($_POST["pseudo"],$_POST["password"])) {
 
