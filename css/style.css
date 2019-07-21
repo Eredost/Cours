@@ -1,0 +1,19 @@
+body {
+    background-color: dodgerblue;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: calc(50vh - 120px);
+    padding: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.664);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
